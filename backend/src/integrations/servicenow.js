@@ -26,6 +26,8 @@ function resolveInstance(instanceId) {
   };
 }
 
+export { resolveInstance as _resolve };
+
 export function isConfigured(instanceId) {
   const c = resolveInstance(instanceId);
   return Boolean((c.instance || c.url) && c.user && c.pass);

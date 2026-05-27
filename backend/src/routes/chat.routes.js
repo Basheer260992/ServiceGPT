@@ -134,7 +134,12 @@ const PRIORITY_TO_IMPACT_URGENCY = {
 async function createInServiceNow(userId, proposal) {
   const instanceId = proposal.selectedInstance;
   if (!sn.isConfigured(instanceId)) {
-    return { ok: false, error: 'ServiceNow is not configured for the selected instance.' };
+    const c = sn._resolve(instanceId);
+    const missing = [];
+    if (!(c.instance || c.url)) missing.push('instance/URL');
+    if (!c.user) missing.push('username');
+    if (!c.pass) missing.push('password');
+    return { ok: false, error: `ServiceNow not configured. Missing: ${missing.join(', ')}. Check backend/.env — current user="${c.user || '(none)'}", pass=${c.pass ? '(set)' : '(empty)'}, instance=${c.instance || c.url || '(none)'}` };
   }
   const user = (db.data.users || []).find((u) => u.id === userId);
   const priority = proposal.priority || 'Moderate';
