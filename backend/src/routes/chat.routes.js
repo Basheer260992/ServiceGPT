@@ -309,21 +309,26 @@ router.get('/', authRequired, (req, res) => {
 });
 
 router.post('/', authRequired, async (req, res) => {
-  const text = String(req.body?.text || '').trim();
-  if (!text) return res.status(400).json({ message: 'Text required' });
-  const now = new Date().toISOString();
-  const user = { id: nanoid(), userId: req.user.id, role: 'user', text, createdAt: now };
-  const replyText = await generateReply(text, req.user.id);
-  const bot = {
-    id: nanoid(),
-    userId: req.user.id,
-    role: 'bot',
-    text: replyText,
-    createdAt: new Date().toISOString(),
-  };
-  db.data.chatMessages.push(user, bot);
-  await persist();
-  res.json({ user, bot });
+  try {
+    const text = String(req.body?.text || '').trim();
+    if (!text) return res.status(400).json({ message: 'Text required' });
+    const now = new Date().toISOString();
+    const user = { id: nanoid(), userId: req.user.id, role: 'user', text, createdAt: now };
+    const replyText = await generateReply(text, req.user.id);
+    const bot = {
+      id: nanoid(),
+      userId: req.user.id,
+      role: 'bot',
+      text: replyText,
+      createdAt: new Date().toISOString(),
+    };
+    db.data.chatMessages.push(user, bot);
+    await persist();
+    res.json({ user, bot });
+  } catch (err) {
+    console.error('[chat] error:', err);
+    res.status(500).json({ message: 'Chat error', detail: err.message });
+  }
 });
 
 export default router;
