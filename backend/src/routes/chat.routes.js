@@ -47,22 +47,58 @@ function hasPriorityHint(text) {
   return /\b(critical|high|urgent|asap|down|blocked|severe|low|minor|not urgent|whenever|when you can|production down|complete outage|everyone (is )?affected)\b/i.test(String(text));
 }
 
+const STOP_WORDS = new Set([
+  'the', 'and', 'for', 'are', 'but', 'not', 'you', 'all', 'can', 'had', 'her',
+  'was', 'one', 'our', 'out', 'has', 'have', 'been', 'some', 'them', 'who',
+  'will', 'his', 'its', 'this', 'that', 'with', 'from', 'they', 'their',
+  'what', 'when', 'where', 'which', 'does', 'how', 'why', 'about', 'than',
+  'into', 'over', 'after', 'just', 'very', 'too', 'also', 'each',
+]);
+
+function searchKnowledge(text) {
+  const articles = db.data.knowledge || [];
+  if (!articles.length) return null;
+  const t = text.toLowerCase();
+  let best = null;
+  let bestScore = 0;
+  for (const a of articles) {
+    const title = (a.title || '').toLowerCase();
+    const summary = (a.summary || '').toLowerCase();
+    const category = (a.category || '').toLowerCase();
+    const words = t.split(/\s+/).filter((w) => w.length > 2 && !STOP_WORDS.has(w));
+    let score = 0;
+    for (const w of words) {
+      if (title.includes(w)) score += 3;
+      if (summary.includes(w)) score += 2;
+      if (category.includes(w)) score += 1;
+    }
+    if (score > bestScore) { bestScore = score; best = a; }
+  }
+  return bestScore >= 3 ? best : null;
+}
+
 function rulesReply(text) {
   const t = text.toLowerCase();
   for (const [key, reply] of Object.entries(KNOWLEDGE_TIPS)) {
     if (t.includes(key)) return reply;
   }
   if (t.includes('what is servicenow') || t.includes('what is service now') || t.includes('servicenow')) {
-    return 'ServiceNow is an enterprise service management platform used for incident, change, problem, and request tracking. In this portal I can create ServiceNow incidents, but general conversational replies need a GPT API key in backend/.env.';
+    return 'ServiceNow is an enterprise service management platform used for incident, change, problem, and request tracking. You can create ServiceNow incidents by typing "create incident" followed by a description.';
   }
   if (t.includes('who are you') || t.includes('what can you do') || t.includes('what is this')) {
-    return 'I am ServiceGPT, an assistant that can create ServiceNow incidents and help with IT service requests. For broader chat or knowledge questions, the GPT engine must be enabled with a backend API key.';
+    return 'I am ServiceGPT, your IT service desk assistant. I can create incidents in ServiceNow, search the knowledge base, and help with common IT issues. Type "create incident" to get started, or ask me about VPN, passwords, Outlook, printers, or laptops.';
   }
   if (t.includes('hello') || t.includes('hi ') || t.includes('hey')) {
-    return 'Hi! I can open ServiceNow incidents for you right now. For general questions, the GPT engine needs GEMINI_API_KEY or GOOGLE_API_KEY (for Gemini), or ANTHROPIC_API_KEY (for Claude) set in backend/.env.';
+    return 'Hi! How can I help? I can create ServiceNow incidents, search the knowledge base, or answer common IT questions.';
   }
   if (t.includes('thanks') || t.includes('thank you')) return 'You are welcome!';
-  return 'I can create incidents in ServiceNow if you say "create incident <describe issue>". For general chat, the GPT engine is not configured yet — ask the admin to set GEMINI_API_KEY or GOOGLE_API_KEY (for Gemini), or ANTHROPIC_API_KEY (for Claude) in backend/.env.';
+
+  const kb = searchKnowledge(text);
+  if (kb) {
+    return `${kb.body}\n\nSource: Knowledge Base article "${kb.title}" (${kb.category}).`;
+  }
+
+  return 'I can help with: creating ServiceNow incidents ("create incident ..."), answering IT questions (try keywords like vpn, password, outlook, printer, laptop, sla), or searching the knowledge base. What do you need?';
 }
 
 function buildContext(userId) {
