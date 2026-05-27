@@ -21,11 +21,11 @@ const defaultData = {
   // ServiceNow instances (admin-managed). Example shape:
   // [{ id: '1', name: 'CRISP - Security Incident', instance: 'dev352459', url: 'https://dev352459.service-now.com', username: 'admin' }]
   servicenowInstances: [
-      { id: 'inst-2', name: 'CRISP - Security Incident', instance: 'dev352459', url: 'https://dev352459.service-now.com', username: 'admin' },
-      { id: 'inst-3', name: 'NATAMA/CAPTURE - NBN Incident', instance: 'dev208811', url: 'https://dev208811.service-now.com', username: 'admin' },
-      { id: 'inst-4', name: 'MyServices - Request Item', instance: 'dev305710', url: 'https://dev305710.service-now.com', username: 'admin' },
-      { id: 'inst-5', name: 'AskUs - HR Request', instance: 'dev392710', url: 'https://dev392710.service-now.com', username: 'admin' },
-      { id: 'inst-1', name: 'ITAM Request - Internal incident', instance: process.env.SERVICENOW_INSTANCE || 'dev386084', url: process.env.SERVICENOW_URL || `https://${process.env.SERVICENOW_INSTANCE || 'dev386084'}.service-now.com`, username: process.env.SERVICENOW_USERNAME || 'admin' },
+      { id: 'inst-2', name: 'CRISP - Security Incident', instance: 'dev347798', url: 'https://dev347798.service-now.com', username: 'admin' },
+      { id: 'inst-3', name: 'NATAMA/CAPTURE - NBN Incident', instance: 'dev379111', url: 'https://dev379111.service-now.com', username: 'admin' },
+      { id: 'inst-4', name: 'MyServices - Request Item', instance: 'dev388985', url: 'https://dev388985.service-now.com', username: 'admin' },
+      { id: 'inst-5', name: 'AskUs - HR Request', instance: 'dev347798', url: 'https://dev347798.service-now.com', username: 'admin' },
+      { id: 'inst-1', name: 'ITAM Request - Internal incident', instance: process.env.SERVICENOW_INSTANCE || 'dev347798', url: process.env.SERVICENOW_URL || `https://${process.env.SERVICENOW_INSTANCE || 'dev347798'}.service-now.com`, username: process.env.SERVICENOW_USERNAME || 'admin' },
     ],
 };
 
