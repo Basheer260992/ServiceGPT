@@ -148,6 +148,18 @@ calls a single origin in development and there are no CORS surprises.
 | Support  | sameera@servicegpt.io     | support123  |
 | Employee | anita@servicegpt.io       | user123     |
 
+## ServiceNow instances
+
+| # | Name | URL | Username | Password |
+|---|---|---|---|---|
+| 1 | CRISP - Security Incident | https://dev347798.service-now.com | admin | uu=EqW8-TbR3 |
+| 2 | NATAMA/CAPTURE - NBN Incident | https://dev379111.service-now.com | admin | qX=q5oYRfO@6 |
+| 3 | MyServices - Request Item | https://dev388985.service-now.com | admin | /TYhCxmY9m+9 |
+| 4 | AskUs - HR Request | https://dev393269.service-now.com | admin | rg4gjFQ-GC5$ |
+| 5 | ITAM Request - Internal incident | https://dev347798.service-now.com | admin | uu=EqW8-TbR3 |
+
+> Note: Instance 2 (dev379111) may fail on writes — the PDI appears to be in a hibernated state.
+
 ## REST API
 
 All routes require `Authorization: Bearer <token>` except `/api/auth/login` and `/api/auth/register`.
