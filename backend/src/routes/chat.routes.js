@@ -154,8 +154,36 @@ async function createInServiceNow(userId, proposal) {
       category: 'software',
       requestedBy: user?.name || user?.email || '',
     }, instanceId);
-    return { ok: true, ticket: created };
+    return { ok: true, ticket: created, source: 'servicenow' };
   } catch (err) {
+    const isNetworkError = err.message?.toLowerCase().includes('fetch failed') ||
+      err.code === 'ECONNREFUSED' || err.code === 'ENOTFOUND' || err.code === 'ETIMEDOUT';
+    if (isNetworkError) {
+      // Fall back to local storage when ServiceNow is unreachable
+      const num = `INC${String(Math.floor(Math.random() * 9000000) + 1000000)}`;
+      const local = {
+        id: nanoid(),
+        number: num,
+        shortDescription: proposal.shortDescription,
+        description: proposal.description || proposal.shortDescription,
+        priority,
+        impact,
+        urgency,
+        category: 'software',
+        state: 'New',
+        requestedBy: user?.name || user?.email || '',
+        assignedTo: '',
+        assignmentGroup: '',
+        attachments: [],
+        sla: 100,
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+      };
+      if (!Array.isArray(db.data.incidents)) db.data.incidents = [];
+      db.data.incidents.unshift(local);
+      await persist();
+      return { ok: true, ticket: local, source: 'local' };
+    }
     return {
       ok: false,
       error: `ServiceNow rejected the request: ${err.message}${err.status ? ` (HTTP ${err.status})` : ''}`,
@@ -212,6 +240,9 @@ async function generateReply(text, userId) {
       await setPending(userId, null);
       if (result.ok) {
         const t = result.ticket;
+        if (result.source === 'local') {
+          return `Created ${t.number} locally (ServiceNow unreachable). State: ${t.state}, priority: ${t.priority}. View it on the Incidents page.`;
+        }
         const inst = sn.listInstances().find((i) => i.id === pending.selectedInstance) || sn.listInstances()[0] || {};
         const base = inst.url || `https://${inst.instance || process.env.SERVICENOW_INSTANCE}.service-now.com`;
         return `Created ${t.number} in ServiceNow. State: ${t.state}, priority: ${t.priority}. View it at ${base}/nav_to.do?uri=incident.do?sys_id=${t.id}`;
