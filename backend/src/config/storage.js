@@ -24,7 +24,7 @@ const defaultData = {
       { id: 'inst-2', name: 'CRISP - Security Incident', instance: 'dev347798', url: 'https://dev347798.service-now.com', username: 'admin' },
       { id: 'inst-3', name: 'NATAMA/CAPTURE - NBN Incident', instance: 'dev379111', url: 'https://dev379111.service-now.com', username: 'admin' },
       { id: 'inst-4', name: 'MyServices - Request Item', instance: 'dev388985', url: 'https://dev388985.service-now.com', username: 'admin' },
-      { id: 'inst-5', name: 'AskUs - HR Request', instance: 'dev347798', url: 'https://dev347798.service-now.com', username: 'admin' },
+      { id: 'inst-5', name: 'AskUs - HR Request', instance: 'dev393269', url: 'https://dev393269.service-now.com', username: 'admin' },
       { id: 'inst-1', name: 'ITAM Request - Internal incident', instance: process.env.SERVICENOW_INSTANCE || 'dev347798', url: process.env.SERVICENOW_URL || `https://${process.env.SERVICENOW_INSTANCE || 'dev347798'}.service-now.com`, username: process.env.SERVICENOW_USERNAME || 'admin' },
     ],
 };
