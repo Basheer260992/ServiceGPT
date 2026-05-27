@@ -157,7 +157,9 @@ async function createInServiceNow(userId, proposal) {
     return { ok: true, ticket: created, source: 'servicenow' };
   } catch (err) {
     const isNetworkError = err.message?.toLowerCase().includes('fetch failed') ||
-      err.code === 'ECONNREFUSED' || err.code === 'ENOTFOUND' || err.code === 'ETIMEDOUT';
+      err.cause?.code === 'ECONNREFUSED' || err.cause?.code === 'ENOTFOUND' ||
+      err.cause?.code === 'ETIMEDOUT' || err.cause?.code === 'ECONNRESET' ||
+      err.cause?.code === 'UND_ERR_CONNECT_TIMEOUT';
     if (isNetworkError) {
       // Fall back to local storage when ServiceNow is unreachable
       const num = `INC${String(Math.floor(Math.random() * 9000000) + 1000000)}`;
@@ -184,9 +186,10 @@ async function createInServiceNow(userId, proposal) {
       await persist();
       return { ok: true, ticket: local, source: 'local' };
     }
+    const detail = err.cause?.message || err.cause?.code || '';
     return {
       ok: false,
-      error: `ServiceNow rejected the request: ${err.message}${err.status ? ` (HTTP ${err.status})` : ''}`,
+      error: `ServiceNow rejected: ${err.message}${detail ? ` (${detail})` : ''}${err.status ? ` (HTTP ${err.status})` : ''}`,
     };
   }
 }
