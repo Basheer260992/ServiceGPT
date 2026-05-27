@@ -1,0 +1,1545 @@
+{
+  "users": [
+    {
+      "id": "r5YXBOfu02kb5McaYJyWo",
+      "name": "System Admin",
+      "email": "admin@servicegpt.io",
+      "password": "$2a$10$x1BtIkWnQiJ0gDtVHxk8z.ZgeoUn14ClRndtpHCemJkYNJrtGqv9u",
+      "role": "admin",
+      "department": "IT Operations",
+      "avatar": "SA",
+      "createdAt": "2026-05-27T13:49:23.614Z"
+    },
+    {
+      "id": "sJRaXSYI4CpPM59B_w2Ja",
+      "name": "Sameera Tamboli",
+      "email": "sameera@servicegpt.io",
+      "password": "$2a$10$6HFrn7rMp4UuWDT8XLFoReQVN7iywWqKxhyMOkdQ.vx2IvmrAmdV2",
+      "role": "support",
+      "department": "IT Support",
+      "avatar": "ST",
+      "createdAt": "2026-05-27T13:49:23.614Z"
+    },
+    {
+      "id": "0F-ulipT7J-CozZt_yV6T",
+      "name": "Anita Juliet Nazareth",
+      "email": "anita@servicegpt.io",
+      "password": "$2a$10$AyS18o7xQt/uCHP.KpFRl.GUe49Gibue3a5NqVM6z9d.ybNsyP9EK",
+      "role": "employee",
+      "department": "Engineering",
+      "avatar": "AN",
+      "createdAt": "2026-05-27T13:49:23.614Z"
+    },
+    {
+      "id": "guest-user",
+      "name": "Guest User",
+      "email": "guest@servicegpt.io",
+      "password": "$2a$10$LY0qdcChGNxGTf7LxtHZQuA4AHZYJgbb9CbQ8t5l5OoXG3BqDzCka",
+      "role": "guest",
+      "department": "General",
+      "avatar": "GU",
+      "createdAt": "2026-05-27T13:49:23.614Z"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "42zWcPuWqy__V96S21SzL",
+      "number": "INC0001001",
+      "shortDescription": "Email not syncing on Outlook",
+      "description": "Detailed description of the issue with reproduction steps and affected systems.",
+      "priority": "Low",
+      "category": "Email",
+      "assignmentGroup": "Security Team",
+      "state": "In Progress",
+      "impact": "High",
+      "urgency": "Low",
+      "requestedBy": "Anita Juliet Nazareth",
+      "assignedTo": "Sameera Tamboli",
+      "attachments": [],
+      "sla": 59,
+      "createdAt": "2026-05-27T13:49:23.614Z",
+      "updatedAt": "2026-05-27T13:49:23.614Z"
+    },
+    {
+      "id": "4QZd6XevINHgGmjlTssBM",
+      "number": "INC0001002",
+      "shortDescription": "VPN connection drops every 10 minutes",
+      "description": "Detailed description of the issue with reproduction steps and affected systems.",
+      "priority": "Low",
+      "category": "Access",
+      "assignmentGroup": "Application Support",
+      "state": "Closed",
+      "impact": "Low",
+      "urgency": "Low",
+      "requestedBy": "Anita Juliet Nazareth",
+      "assignedTo": "Sameera Tamboli",
+      "attachments": [],
+      "sla": 51,
+      "createdAt": "2026-05-27T12:49:23.614Z",
+      "updatedAt": "2026-05-27T13:49:23.614Z"
+    },
+    {
+      "id": "1A2DdSgRuVIzhYxL8KVRW",
+      "number": "INC0001003",
+      "shortDescription": "Printer offline in 3rd floor",
+      "description": "Detailed description of the issue with reproduction steps and affected systems.",
+      "priority": "Low",
+      "category": "Email",
+      "assignmentGroup": "Application Support",
+      "state": "In Progress",
+      "impact": "Medium",
+      "urgency": "Low",
+      "requestedBy": "Anita Juliet Nazareth",
+      "assignedTo": "Sameera Tamboli",
+      "attachments": [],
+      "sla": 11,
+      "createdAt": "2026-05-27T11:49:23.614Z",
+      "updatedAt": "2026-05-27T13:49:23.614Z"
+    },
+    {
+      "id": "QqDHqDgrZ8lRB-ZyTSHrY",
+      "number": "INC0001004",
+      "shortDescription": "Slow response on CRM portal",
+      "description": "Detailed description of the issue with reproduction steps and affected systems.",
+      "priority": "Moderate",
+      "category": "Hardware",
+      "assignmentGroup": "Database Team",
+      "state": "Closed",
+      "impact": "Medium",
+      "urgency": "High",
+      "requestedBy": "Anita Juliet Nazareth",
+      "assignedTo": "Sameera Tamboli",
+      "attachments": [],
+      "sla": 76,
+      "createdAt": "2026-05-27T10:49:23.614Z",
+      "updatedAt": "2026-05-27T13:49:23.614Z"
+    },
+    {
+      "id": "9BzJwJjDWbiXLveTb9Pij",
+      "number": "INC0001005",
+      "shortDescription": "Unable to access shared drive",
+      "description": "Detailed description of the issue with reproduction steps and affected systems.",
+      "priority": "Critical",
+      "category": "Access",
+      "assignmentGroup": "Application Support",
+      "state": "On Hold",
+      "impact": "Low",
+      "urgency": "Low",
+      "requestedBy": "Anita Juliet Nazareth",
+      "assignedTo": "Sameera Tamboli",
+      "attachments": [],
+      "sla": 21,
+      "createdAt": "2026-05-27T09:49:23.614Z",
+      "updatedAt": "2026-05-27T13:49:23.614Z"
+    },
+    {
+      "id": "EJ5Sq7cFQpf53KCUwbgla",
+      "number": "INC0001006",
+      "shortDescription": "Password reset request",
+      "description": "Detailed description of the issue with reproduction steps and affected systems.",
+      "priority": "Moderate",
+      "category": "Access",
+      "assignmentGroup": "Security Team",
+      "state": "Closed",
+      "impact": "Medium",
+      "urgency": "Low",
+      "requestedBy": "Anita Juliet Nazareth",
+      "assignedTo": "Sameera Tamboli",
+      "attachments": [],
+      "sla": 93,
+      "createdAt": "2026-05-27T08:49:23.614Z",
+      "updatedAt": "2026-05-27T13:49:23.614Z"
+    },
+    {
+      "id": "6dckXT2txjbNYfOrLl6e5",
+      "number": "INC0001007",
+      "shortDescription": "Laptop battery not charging",
+      "description": "Detailed description of the issue with reproduction steps and affected systems.",
+      "priority": "Low",
+      "category": "Access",
+      "assignmentGroup": "Database Team",
+      "state": "In Progress",
+      "impact": "Low",
+      "urgency": "Medium",
+      "requestedBy": "Anita Juliet Nazareth",
+      "assignedTo": "Sameera Tamboli",
+      "attachments": [],
+      "sla": 0,
+      "createdAt": "2026-05-27T07:49:23.615Z",
+      "updatedAt": "2026-05-27T13:49:23.615Z"
+    },
+    {
+      "id": "wwVDwGn1moY6wtUDfUSq5",
+      "number": "INC0001008",
+      "shortDescription": "Database timeout on reporting",
+      "description": "Detailed description of the issue with reproduction steps and affected systems.",
+      "priority": "High",
+      "category": "Hardware",
+      "assignmentGroup": "Database Team",
+      "state": "New",
+      "impact": "Low",
+      "urgency": "High",
+      "requestedBy": "Anita Juliet Nazareth",
+      "assignedTo": "Sameera Tamboli",
+      "attachments": [],
+      "sla": 37,
+      "createdAt": "2026-05-27T06:49:23.615Z",
+      "updatedAt": "2026-05-27T13:49:23.615Z"
+    }
+  ],
+  "problems": [
+    {
+      "id": "0qAn_2TkfA5dAmgiz0zEk",
+      "number": "PRB0002001",
+      "shortDescription": "Recurring VPN disconnections across region",
+      "description": "Root cause analysis pending. Multiple incidents linked.",
+      "priority": "High",
+      "category": "Software",
+      "assignmentGroup": "Application Support",
+      "state": "Resolved",
+      "impact": "Low",
+      "urgency": "High",
+      "requestedBy": "Sameera Tamboli",
+      "assignedTo": "System Admin",
+      "relatedIncidents": [
+        "INC0001001"
+      ],
+      "attachments": [],
+      "createdAt": "2026-05-27T13:49:23.615Z",
+      "updatedAt": "2026-05-27T13:49:23.615Z"
+    },
+    {
+      "id": "N6bK3T4PM-kTi_5Vt3GHY",
+      "number": "PRB0002002",
+      "shortDescription": "Database deadlocks on month-end batch",
+      "description": "Root cause analysis pending. Multiple incidents linked.",
+      "priority": "Low",
+      "category": "Network",
+      "assignmentGroup": "Network Team",
+      "state": "New",
+      "impact": "Medium",
+      "urgency": "Medium",
+      "requestedBy": "Sameera Tamboli",
+      "assignedTo": "System Admin",
+      "relatedIncidents": [
+        "INC0001002"
+      ],
+      "attachments": [],
+      "createdAt": "2026-05-26T13:49:23.615Z",
+      "updatedAt": "2026-05-27T13:49:23.615Z"
+    },
+    {
+      "id": "B84ieSRz1PFTAfi2yGl2y",
+      "number": "PRB0002003",
+      "shortDescription": "Email server intermittent outages",
+      "description": "Root cause analysis pending. Multiple incidents linked.",
+      "priority": "Moderate",
+      "category": "Security",
+      "assignmentGroup": "Database Team",
+      "state": "Known Error",
+      "impact": "High",
+      "urgency": "High",
+      "requestedBy": "Sameera Tamboli",
+      "assignedTo": "System Admin",
+      "relatedIncidents": [
+        "INC0001003"
+      ],
+      "attachments": [],
+      "createdAt": "2026-05-25T13:49:23.615Z",
+      "updatedAt": "2026-05-27T13:49:23.615Z"
+    },
+    {
+      "id": "D35siS52giTakLaQAiiq8",
+      "number": "PRB0002004",
+      "shortDescription": "SSO login failures during peak hours",
+      "description": "Root cause analysis pending. Multiple incidents linked.",
+      "priority": "Low",
+      "category": "Network",
+      "assignmentGroup": "Hardware Team",
+      "state": "Known Error",
+      "impact": "Medium",
+      "urgency": "Low",
+      "requestedBy": "Sameera Tamboli",
+      "assignedTo": "System Admin",
+      "relatedIncidents": [
+        "INC0001004"
+      ],
+      "attachments": [],
+      "createdAt": "2026-05-24T13:49:23.615Z",
+      "updatedAt": "2026-05-27T13:49:23.615Z"
+    }
+  ],
+  "changes": [
+    {
+      "id": "L8cqZWtjJAQW0DTSzW4J8",
+      "number": "CHG0003001",
+      "shortDescription": "Upgrade production database to v15",
+      "description": "Standard change with rollback plan and CAB approval pending.",
+      "priority": "Low",
+      "category": "Hardware",
+      "assignmentGroup": "Application Support",
+      "state": "New",
+      "impact": "High",
+      "urgency": "Medium",
+      "requestedBy": "System Admin",
+      "assignedTo": "Sameera Tamboli",
+      "plannedStart": "2026-05-28T13:49:23.615Z",
+      "plannedEnd": "2026-05-29T13:49:23.615Z",
+      "riskLevel": "Moderate",
+      "attachments": [],
+      "createdAt": "2026-05-27T13:49:23.615Z",
+      "updatedAt": "2026-05-27T13:49:23.615Z"
+    },
+    {
+      "id": "nr8hnhFXw0_5F6qpJFS-9",
+      "number": "CHG0003002",
+      "shortDescription": "Deploy new firewall ruleset",
+      "description": "Standard change with rollback plan and CAB approval pending.",
+      "priority": "Low",
+      "category": "Email",
+      "assignmentGroup": "Security Team",
+      "state": "Approved",
+      "impact": "Low",
+      "urgency": "Low",
+      "requestedBy": "System Admin",
+      "assignedTo": "Sameera Tamboli",
+      "plannedStart": "2026-05-28T13:49:23.615Z",
+      "plannedEnd": "2026-05-29T13:49:23.615Z",
+      "riskLevel": "Moderate",
+      "attachments": [],
+      "createdAt": "2026-05-27T01:49:23.615Z",
+      "updatedAt": "2026-05-27T13:49:23.615Z"
+    },
+    {
+      "id": "SEpjigLyLX-p67eKLmt96",
+      "number": "CHG0003003",
+      "shortDescription": "Patch Windows servers - May cycle",
+      "description": "Standard change with rollback plan and CAB approval pending.",
+      "priority": "Moderate",
+      "category": "Network",
+      "assignmentGroup": "Database Team",
+      "state": "Approved",
+      "impact": "Medium",
+      "urgency": "Medium",
+      "requestedBy": "System Admin",
+      "assignedTo": "Sameera Tamboli",
+      "plannedStart": "2026-05-28T13:49:23.615Z",
+      "plannedEnd": "2026-05-29T13:49:23.615Z",
+      "riskLevel": "Low",
+      "attachments": [],
+      "createdAt": "2026-05-26T13:49:23.615Z",
+      "updatedAt": "2026-05-27T13:49:23.615Z"
+    },
+    {
+      "id": "TmDWVBxf2IFx_KSX83jKo",
+      "number": "CHG0003004",
+      "shortDescription": "Migrate email to Exchange Online",
+      "description": "Standard change with rollback plan and CAB approval pending.",
+      "priority": "Low",
+      "category": "Network",
+      "assignmentGroup": "Network Team",
+      "state": "Assess",
+      "impact": "Medium",
+      "urgency": "Medium",
+      "requestedBy": "System Admin",
+      "assignedTo": "Sameera Tamboli",
+      "plannedStart": "2026-05-28T13:49:23.615Z",
+      "plannedEnd": "2026-05-29T13:49:23.615Z",
+      "riskLevel": "High",
+      "attachments": [],
+      "createdAt": "2026-05-26T01:49:23.615Z",
+      "updatedAt": "2026-05-27T13:49:23.615Z"
+    },
+    {
+      "id": "VjKFbp6HLSZTpGSkY50Wk",
+      "number": "CHG0003005",
+      "shortDescription": "Rotate SSL certificates",
+      "description": "Standard change with rollback plan and CAB approval pending.",
+      "priority": "Critical",
+      "category": "Security",
+      "assignmentGroup": "Database Team",
+      "state": "New",
+      "impact": "Low",
+      "urgency": "High",
+      "requestedBy": "System Admin",
+      "assignedTo": "Sameera Tamboli",
+      "plannedStart": "2026-05-28T13:49:23.615Z",
+      "plannedEnd": "2026-05-29T13:49:23.615Z",
+      "riskLevel": "High",
+      "attachments": [],
+      "createdAt": "2026-05-25T13:49:23.615Z",
+      "updatedAt": "2026-05-27T13:49:23.615Z"
+    }
+  ],
+  "catalog": [
+    {
+      "id": "qemP7pcuZd3uk4dY3FkET",
+      "name": "Request New Laptop",
+      "category": "Hardware",
+      "icon": "Laptop",
+      "description": "Order a new corporate laptop",
+      "sla": "5 business days"
+    },
+    {
+      "id": "Hqz7sjolaWruX4veCNjV7",
+      "name": "Software License",
+      "category": "Software",
+      "icon": "Package",
+      "description": "Request a paid software license",
+      "sla": "2 business days"
+    },
+    {
+      "id": "6zncag2SXXsuX_eIVHEF4",
+      "name": "VPN Access",
+      "category": "Network",
+      "icon": "Shield",
+      "description": "Get remote VPN connectivity",
+      "sla": "1 business day"
+    },
+    {
+      "id": "LfVz-5EgaohQiDnQUVhB8",
+      "name": "Email Distribution List",
+      "category": "Email",
+      "icon": "Mail",
+      "description": "Create or modify a distribution list",
+      "sla": "4 hours"
+    },
+    {
+      "id": "P91mKsWsUnrt-EubJj_0-",
+      "name": "Office 365 License",
+      "category": "Software",
+      "icon": "FileText",
+      "description": "Provision a Microsoft 365 license",
+      "sla": "1 business day"
+    },
+    {
+      "id": "kdCYkFyvxvJGRBfuWNzAA",
+      "name": "Server Access",
+      "category": "Access",
+      "icon": "Server",
+      "description": "Request elevated server access",
+      "sla": "3 business days"
+    },
+    {
+      "id": "6uO6Z6-W6VhD7jvzRh0O8",
+      "name": "New User Onboarding",
+      "category": "Access",
+      "icon": "UserPlus",
+      "description": "Full IT onboarding for a new hire",
+      "sla": "5 business days"
+    },
+    {
+      "id": "vBIARQi6V1362XnLWDtJE",
+      "name": "Mobile Device",
+      "category": "Hardware",
+      "icon": "Smartphone",
+      "description": "Corporate mobile device request",
+      "sla": "7 business days"
+    }
+  ],
+  "knowledge": [
+    {
+      "id": "RaR8JuzNUBfMslzMkO_k3",
+      "title": "How to reset your Windows password",
+      "category": "Access",
+      "summary": "Step-by-step guide to reset your corporate Windows password using the self-service portal.",
+      "body": "Open the self-service portal at https://reset.servicegpt.io, enter your email, complete MFA, and choose a new password meeting policy.",
+      "author": "IT Support",
+      "views": 1245,
+      "updatedAt": "2026-05-27T13:49:23.615Z"
+    },
+    {
+      "id": "LuYZK8D9V-EKdL6jzAicX",
+      "title": "Connecting to VPN from macOS",
+      "category": "Network",
+      "summary": "Configure the corporate VPN profile on macOS Sonoma.",
+      "body": "Download the .mobileconfig from the portal, double-click to install, authenticate with corporate SSO.",
+      "author": "Network Team",
+      "views": 832,
+      "updatedAt": "2026-05-27T13:49:23.615Z"
+    },
+    {
+      "id": "mxT5lrGQwTKCGXH3wCE9j",
+      "title": "Outlook keeps asking for password",
+      "category": "Email",
+      "summary": "Resolve repeated password prompts in Outlook desktop.",
+      "body": "Clear cached credentials from Credential Manager, restart Outlook, sign in with SSO.",
+      "author": "Application Support",
+      "views": 2114,
+      "updatedAt": "2026-05-27T13:49:23.615Z"
+    },
+    {
+      "id": "0YBgIpwIn3qVuKrIcvbnz",
+      "title": "Best practices for SLA management",
+      "category": "Process",
+      "summary": "Internal guide to staying within SLA targets on P1/P2 incidents.",
+      "body": "Acknowledge within 15 minutes, communicate every 30 minutes, escalate to tier 2 if not resolved within target.",
+      "author": "IT Operations",
+      "views": 421,
+      "updatedAt": "2026-05-27T13:49:23.615Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "y60j98w71g2X6-M4zG963",
+      "userId": "0F-ulipT7J-CozZt_yV6T",
+      "title": "Welcome to ServiceGPT",
+      "message": "Your portal is ready. Explore the catalog to get started.",
+      "type": "info",
+      "read": false,
+      "createdAt": "2026-05-27T13:49:23.615Z"
+    },
+    {
+      "id": "OfDqCsq2HjSp7ECv9LW2x",
+      "userId": "0F-ulipT7J-CozZt_yV6T",
+      "title": "Incident assigned",
+      "message": "INC0001001 has been assigned to your group.",
+      "type": "warning",
+      "read": false,
+      "createdAt": "2026-05-27T13:49:23.615Z"
+    }
+  ],
+  "chatMessages": [
+    {
+      "id": "-6Y46drWALXPHbjrEO2pv",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "I want to create an incident",
+      "createdAt": "2026-05-27T13:53:17.899Z"
+    },
+    {
+      "id": "x-aHJiaS4T_Zj7IAICvtp",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "I can open this incident in one of these instances:\n1. CRISP - Security Incident (dev352459)\n2. NATAMA/CAPTURE - NBN Incident (dev208811)\n3. MyServices - Request Item (dev305710)\n4. AskUs - HR Request (dev392710)\n5. ITAM Request - Internal incident (dev386084)\nReply with the number of the instance you want to use.",
+      "createdAt": "2026-05-27T13:53:17.905Z"
+    },
+    {
+      "id": "KugkQcmJehz18AcJaTncG",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "4",
+      "createdAt": "2026-05-27T13:54:21.563Z"
+    },
+    {
+      "id": "FJJK6_mwJbtmuf1XJ3S76",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "Selected instance: AskUs - HR Request. What short description should I use for this incident? Reply with a new short description, or say \"same\" to keep: \"I want to\".",
+      "createdAt": "2026-05-27T13:54:21.567Z"
+    },
+    {
+      "id": "HfCp9BWSLhHV4VCMc-sbH",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "same",
+      "createdAt": "2026-05-27T13:54:27.499Z"
+    },
+    {
+      "id": "yDqluW7SU_ALLvcNXQASN",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "Great — what priority should this incident have? Critical, High, Moderate, or Low?",
+      "createdAt": "2026-05-27T13:54:27.504Z"
+    },
+    {
+      "id": "av-SGwBlmNcnV0khLhpw5",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "low",
+      "createdAt": "2026-05-27T13:54:30.310Z"
+    },
+    {
+      "id": "-4QLErGbD0xRNjyY-VPyk",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "Got it. I'll open this incident with short description \"I want to\" and priority Low. Reply \"yes\" to confirm and create the incident, or \"no\" to cancel.",
+      "createdAt": "2026-05-27T13:54:30.314Z"
+    },
+    {
+      "id": "ByoFNmBzMB-xHhG5u32yu",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "yes",
+      "createdAt": "2026-05-27T13:54:37.182Z"
+    },
+    {
+      "id": "NCH8KRl8yoC-nUHbXdxVf",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "I could not create the incident. ServiceNow is not configured for the selected instance.",
+      "createdAt": "2026-05-27T13:54:37.187Z"
+    },
+    {
+      "id": "E1lI9aEodw0GDjBkzrTSl",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "2",
+      "createdAt": "2026-05-27T13:54:46.151Z"
+    },
+    {
+      "id": "0vO-w5LNnyT4NV1-_BuoM",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "I can create incidents in ServiceNow if you say \"create incident <describe issue>\". For general chat, the GPT engine is not configured yet — ask the admin to set GEMINI_API_KEY or GOOGLE_API_KEY (for Gemini), or ANTHROPIC_API_KEY (for Claude) in backend/.env.",
+      "createdAt": "2026-05-27T13:54:46.153Z"
+    },
+    {
+      "id": "vMW6srbothiAugVMuw-UJ",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "create incident",
+      "createdAt": "2026-05-27T13:54:56.276Z"
+    },
+    {
+      "id": "-XX4Rv3vb3rDxtNbDmTyY",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "I can open this incident in one of these instances:\n1. CRISP - Security Incident (dev352459)\n2. NATAMA/CAPTURE - NBN Incident (dev208811)\n3. MyServices - Request Item (dev305710)\n4. AskUs - HR Request (dev392710)\n5. ITAM Request - Internal incident (dev386084)\nReply with the number of the instance you want to use.",
+      "createdAt": "2026-05-27T13:54:56.283Z"
+    },
+    {
+      "id": "UiRC5Yw4QVLgHkhUr8Rgv",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "1",
+      "createdAt": "2026-05-27T13:54:58.525Z"
+    },
+    {
+      "id": "E7DUcIqd5OJY6hjrpbRoN",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "Selected instance: CRISP - Security Incident. What short description should I use for this incident?",
+      "createdAt": "2026-05-27T13:54:58.528Z"
+    },
+    {
+      "id": "YVy7taAJCD9749CtYoHS0",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "incident",
+      "createdAt": "2026-05-27T13:55:02.147Z"
+    },
+    {
+      "id": "r1lAYSqoLFpztVMi_LGdz",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "Great — what priority should this incident have? Critical, High, Moderate, or Low?",
+      "createdAt": "2026-05-27T13:55:02.151Z"
+    },
+    {
+      "id": "xtg5YIB2l8tn0xCWJ-gm8",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "high",
+      "createdAt": "2026-05-27T13:55:05.532Z"
+    },
+    {
+      "id": "GwKbWWWpHJqY_lc_yxtSD",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "Got it. I'll open this incident with short description \"incident\" and priority High. Reply \"yes\" to confirm and create the incident, or \"no\" to cancel.",
+      "createdAt": "2026-05-27T13:55:05.538Z"
+    },
+    {
+      "id": "n2K_ySXVk8BjVNim_NCUz",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "yes",
+      "createdAt": "2026-05-27T13:55:08.234Z"
+    },
+    {
+      "id": "hIHl1fgrLV1SLbL7orlD6",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "I could not create the incident. ServiceNow is not configured for the selected instance.",
+      "createdAt": "2026-05-27T13:55:08.238Z"
+    },
+    {
+      "id": "9syCSWEzbSbuemVZhuwyg",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "create incident test issue",
+      "createdAt": "2026-05-27T14:09:45.540Z"
+    },
+    {
+      "id": "tvf19FtZbVs32vjNyJFXz",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "I can open this incident in one of these instances:\n1. CRISP - Security Incident (dev347798)\n2. NATAMA/CAPTURE - NBN Incident (dev379111)\n3. MyServices - Request Item (dev388985)\n4. AskUs - HR Request (dev347798)\n5. ITAM Request - Internal incident (dev347798)\nReply with the number of the instance you want to use.",
+      "createdAt": "2026-05-27T14:09:45.544Z"
+    },
+    {
+      "id": "HrM1-tZ0Ot6g3ssNOcr7f",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "1",
+      "createdAt": "2026-05-27T14:09:59.061Z"
+    },
+    {
+      "id": "EtOVTeWee_Q4MpTMHX1c3",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "Selected instance: CRISP - Security Incident. What short description should I use for this incident? Reply with a new short description, or say \"same\" to keep: \"Test issue\".",
+      "createdAt": "2026-05-27T14:09:59.065Z"
+    },
+    {
+      "id": "FgUNANvIDM3kjaQwmrTL4",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "Test incident from API",
+      "createdAt": "2026-05-27T14:09:59.124Z"
+    },
+    {
+      "id": "6QHee2pBQBObllNLOL0qf",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "Great — what priority should this incident have? Critical, High, Moderate, or Low?",
+      "createdAt": "2026-05-27T14:09:59.127Z"
+    },
+    {
+      "id": "_ZsnIa3X5vXZucRwSy9d1",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "Moderate",
+      "createdAt": "2026-05-27T14:09:59.200Z"
+    },
+    {
+      "id": "_cnM61qm_q8l1bd-3OM6A",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "Got it. I'll open this incident with short description \"Test incident from API\" and priority Moderate. Reply \"yes\" to confirm and create the incident, or \"no\" to cancel.",
+      "createdAt": "2026-05-27T14:09:59.205Z"
+    },
+    {
+      "id": "0dcAakFkgphgJsqYxY3v1",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "create incident test issue",
+      "createdAt": "2026-05-27T14:12:50.333Z"
+    },
+    {
+      "id": "UQNch3EwvZxF5cRSaLgZH",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "I can open this incident in one of these instances:\n1. CRISP - Security Incident (dev347798)\n2. NATAMA/CAPTURE - NBN Incident (dev379111)\n3. MyServices - Request Item (dev388985)\n4. AskUs - HR Request (dev347798)\n5. ITAM Request - Internal incident (dev347798)\nReply with the number of the instance you want to use.",
+      "createdAt": "2026-05-27T14:12:50.338Z"
+    },
+    {
+      "id": "ahZNsxsl7dlhWb9G-Grn3",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "1",
+      "createdAt": "2026-05-27T14:12:51.445Z"
+    },
+    {
+      "id": "ozNUyXkAPhCo_cJ6zhQYh",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "Selected instance: CRISP - Security Incident. What short description should I use for this incident? Reply with a new short description, or say \"same\" to keep: \"Test issue\".",
+      "createdAt": "2026-05-27T14:12:51.449Z"
+    },
+    {
+      "id": "pywbSGc15WRCXxH11-FdF",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "Printer not working on 3rd floor",
+      "createdAt": "2026-05-27T14:12:52.562Z"
+    },
+    {
+      "id": "T4xCXelpyM_r400ZAlP5h",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "Great — what priority should this incident have? Critical, High, Moderate, or Low?",
+      "createdAt": "2026-05-27T14:12:52.566Z"
+    },
+    {
+      "id": "WzLWYYFTPu3620DUk4frv",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "High",
+      "createdAt": "2026-05-27T14:12:53.674Z"
+    },
+    {
+      "id": "kKcyfuyo34X4we9wjCV0S",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "Got it. I'll open this incident with short description \"Printer not working on 3rd floor\" and priority High. Reply \"yes\" to confirm and create the incident, or \"no\" to cancel.",
+      "createdAt": "2026-05-27T14:12:53.678Z"
+    },
+    {
+      "id": "5crIpXVe7LE88z4Ya1M7I",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "yes",
+      "createdAt": "2026-05-27T14:12:54.784Z"
+    },
+    {
+      "id": "rDtJ5sKIlYBCCIHuuirwl",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "Created INC0010001 in ServiceNow. State: New, priority: High. View it at https://dev347798.service-now.com/nav_to.do?uri=incident.do?sys_id=a91a72a247818350599482b4116d4351",
+      "createdAt": "2026-05-27T14:13:04.080Z"
+    },
+    {
+      "id": "qQSRcP8asLddDOZjpTrHm",
+      "userId": "0F-ulipT7J-CozZt_yV6T",
+      "role": "user",
+      "text": "create an incident",
+      "createdAt": "2026-05-27T14:13:28.865Z"
+    },
+    {
+      "id": "ofD65c4TYEtSX26wMdodW",
+      "userId": "0F-ulipT7J-CozZt_yV6T",
+      "role": "bot",
+      "text": "I can open this incident in one of these instances:\n1. CRISP - Security Incident (dev347798)\n2. NATAMA/CAPTURE - NBN Incident (dev379111)\n3. MyServices - Request Item (dev388985)\n4. AskUs - HR Request (dev347798)\n5. ITAM Request - Internal incident (dev347798)\nReply with the number of the instance you want to use.",
+      "createdAt": "2026-05-27T14:13:28.872Z"
+    },
+    {
+      "id": "--vxUwKBZxbcPhUPP0bVQ",
+      "userId": "0F-ulipT7J-CozZt_yV6T",
+      "role": "user",
+      "text": "1",
+      "createdAt": "2026-05-27T14:13:32.169Z"
+    },
+    {
+      "id": "G-SpFxSpzg7-13qpDkrZp",
+      "userId": "0F-ulipT7J-CozZt_yV6T",
+      "role": "bot",
+      "text": "Selected instance: CRISP - Security Incident. What short description should I use for this incident?",
+      "createdAt": "2026-05-27T14:13:32.176Z"
+    },
+    {
+      "id": "y-bVfNw5Bw3DQWdwS2nfk",
+      "userId": "0F-ulipT7J-CozZt_yV6T",
+      "role": "user",
+      "text": "hello testing",
+      "createdAt": "2026-05-27T14:13:40.073Z"
+    },
+    {
+      "id": "D9BmfznHi8Esc43wz_PLN",
+      "userId": "0F-ulipT7J-CozZt_yV6T",
+      "role": "bot",
+      "text": "Great — what priority should this incident have? Critical, High, Moderate, or Low?",
+      "createdAt": "2026-05-27T14:13:40.078Z"
+    },
+    {
+      "id": "WaUqb78OcS2L6Y_bK4Aq-",
+      "userId": "0F-ulipT7J-CozZt_yV6T",
+      "role": "user",
+      "text": "high",
+      "createdAt": "2026-05-27T14:13:42.033Z"
+    },
+    {
+      "id": "CjnS3AWEoDLwG6UPAbWas",
+      "userId": "0F-ulipT7J-CozZt_yV6T",
+      "role": "bot",
+      "text": "Got it. I'll open this incident with short description \"hello testing\" and priority High. Reply \"yes\" to confirm and create the incident, or \"no\" to cancel.",
+      "createdAt": "2026-05-27T14:13:42.036Z"
+    },
+    {
+      "id": "HZsQi-hkZNtDKibLkvoq1",
+      "userId": "0F-ulipT7J-CozZt_yV6T",
+      "role": "user",
+      "text": "yes",
+      "createdAt": "2026-05-27T14:13:43.851Z"
+    },
+    {
+      "id": "U--EuKAQm8zwh41MUwGeZ",
+      "userId": "0F-ulipT7J-CozZt_yV6T",
+      "role": "bot",
+      "text": "Created INC0010002 in ServiceNow. State: New, priority: High. View it at https://dev347798.service-now.com/nav_to.do?uri=incident.do?sys_id=e54a3aa247818350599482b4116d4366",
+      "createdAt": "2026-05-27T14:13:45.344Z"
+    },
+    {
+      "id": "0ZexGnRq3qu2VQ9G7UdLD",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "hi",
+      "createdAt": "2026-05-27T14:19:53.329Z"
+    },
+    {
+      "id": "uGo6m3DG3eMePL219kADH",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "I can create incidents in ServiceNow if you say \"create incident <describe issue>\". For general chat, the GPT engine is not configured yet — ask the admin to set GEMINI_API_KEY or GOOGLE_API_KEY (for Gemini), or ANTHROPIC_API_KEY (for Claude) in backend/.env.",
+      "createdAt": "2026-05-27T14:19:53.333Z"
+    },
+    {
+      "id": "PZ7gNmigBngHmbzuPgHpK",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "create incident",
+      "createdAt": "2026-05-27T14:20:08.410Z"
+    },
+    {
+      "id": "wLFc0oFJWdx0uiajfPerg",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "I can open this incident in one of these instances:\n1. CRISP - Security Incident (dev347798)\n2. NATAMA/CAPTURE - NBN Incident (dev379111)\n3. MyServices - Request Item (dev388985)\n4. AskUs - HR Request (dev347798)\n5. ITAM Request - Internal incident (dev347798)\nReply with the number of the instance you want to use.",
+      "createdAt": "2026-05-27T14:20:08.417Z"
+    },
+    {
+      "id": "XazC3HxrD8fYshApKGE8B",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "4",
+      "createdAt": "2026-05-27T14:20:19.655Z"
+    },
+    {
+      "id": "l-gpamTR76LLoiJqqCC0B",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "Selected instance: AskUs - HR Request. What short description should I use for this incident?",
+      "createdAt": "2026-05-27T14:20:19.661Z"
+    },
+    {
+      "id": "WgEwO-uEXFF889T_OS7N1",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "hello how are you",
+      "createdAt": "2026-05-27T14:20:26.284Z"
+    },
+    {
+      "id": "IM_iUyijOKpg_J1U7Xa1w",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "Great — what priority should this incident have? Critical, High, Moderate, or Low?",
+      "createdAt": "2026-05-27T14:20:26.291Z"
+    },
+    {
+      "id": "odHJLyoAVP7hLXyc8032E",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "critical",
+      "createdAt": "2026-05-27T14:20:28.961Z"
+    },
+    {
+      "id": "ZOJs4gNNpM4nck9XsL70y",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "Got it. I'll open this incident with short description \"hello how are you\" and priority Critical. Reply \"yes\" to confirm and create the incident, or \"no\" to cancel.",
+      "createdAt": "2026-05-27T14:20:28.965Z"
+    },
+    {
+      "id": "-J-WPIXnO8yikwhN3gHWG",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "yes",
+      "createdAt": "2026-05-27T14:20:30.913Z"
+    },
+    {
+      "id": "4e0WWG2bgKG2nmecuS1Yy",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "Created INC0010003 in ServiceNow. State: New, priority: Critical. View it at https://dev347798.service-now.com/nav_to.do?uri=incident.do?sys_id=01dbfae247818350599482b4116d43e8",
+      "createdAt": "2026-05-27T14:20:32.419Z"
+    },
+    {
+      "id": "J5ulaZU72IGLGLqy-umgQ",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "my vpn is not working",
+      "createdAt": "2026-05-27T14:21:39.115Z"
+    },
+    {
+      "id": "Q9zQXxBulNcsYqC6aF4aR",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "For VPN issues: check your network, then download the latest profile from the portal.",
+      "createdAt": "2026-05-27T14:21:39.116Z"
+    },
+    {
+      "id": "P5T4oDCATxx7AQP4HbPls",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "how do I reset my email password",
+      "createdAt": "2026-05-27T14:21:39.179Z"
+    },
+    {
+      "id": "aD0KDBksUTw373gjpypjU",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "To reset your password, visit reset.servicegpt.io and complete MFA.",
+      "createdAt": "2026-05-27T14:21:39.179Z"
+    },
+    {
+      "id": "Gn58H0GmEDLZZt7co4cOg",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "hello",
+      "createdAt": "2026-05-27T14:21:39.275Z"
+    },
+    {
+      "id": "-gEJUVwIeyMvi1fo1IGzC",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "Hi! How can I help? I can create ServiceNow incidents, search the knowledge base, or answer common IT questions.",
+      "createdAt": "2026-05-27T14:21:39.275Z"
+    },
+    {
+      "id": "WFl3LIMLxMdMoNTMh0g9i",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "what is the capital of france",
+      "createdAt": "2026-05-27T14:21:39.464Z"
+    },
+    {
+      "id": "cjb2KuPEBj2EfcwICM-2Z",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "Open the self-service portal at https://reset.servicegpt.io, enter your email, complete MFA, and choose a new password meeting policy.\n\nSource: Knowledge Base article \"How to reset your Windows password\" (Access).",
+      "createdAt": "2026-05-27T14:21:39.465Z"
+    },
+    {
+      "id": "rySvLcU4ILIKQAPtwxqXb",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "what is the capital of france",
+      "createdAt": "2026-05-27T14:22:52.534Z"
+    },
+    {
+      "id": "U2wemENcEPS3V7wFmKLFl",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "I can help with: creating ServiceNow incidents (\"create incident ...\"), answering IT questions (try keywords like vpn, password, outlook, printer, laptop, sla), or searching the knowledge base. What do you need?",
+      "createdAt": "2026-05-27T14:22:52.535Z"
+    },
+    {
+      "id": "vAGyroQVdVLAbS1CeFoDo",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "how do I connect to the corporate network from home",
+      "createdAt": "2026-05-27T14:22:52.600Z"
+    },
+    {
+      "id": "Wh87tCQXmexoVz1RdvhDF",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "Download the .mobileconfig from the portal, double-click to install, authenticate with corporate SSO.\n\nSource: Knowledge Base article \"Connecting to VPN from macOS\" (Network).",
+      "createdAt": "2026-05-27T14:22:52.600Z"
+    },
+    {
+      "id": "7jzaM1auPgrQnURvjJ2Ny",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "user",
+      "text": "create incident email server down",
+      "createdAt": "2026-05-27T14:22:52.725Z"
+    },
+    {
+      "id": "b0zleWumdn-IJ7lvpS-69",
+      "userId": "r5YXBOfu02kb5McaYJyWo",
+      "role": "bot",
+      "text": "I can open this incident in one of these instances:\n1. CRISP - Security Incident (dev347798)\n2. NATAMA/CAPTURE - NBN Incident (dev379111)\n3. MyServices - Request Item (dev388985)\n4. AskUs - HR Request (dev347798)\n5. ITAM Request - Internal incident (dev347798)\nReply with the number of the instance you want to use.",
+      "createdAt": "2026-05-27T14:22:52.732Z"
+    },
+    {
+      "id": "MU2BW99xYn_EgXv3-mzI4",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "I want to create an incident",
+      "createdAt": "2026-05-27T14:23:23.030Z"
+    },
+    {
+      "id": "OApAA0BzpKgtLhO29S4Ma",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "I can open this incident in one of these instances:\n1. CRISP - Security Incident (dev347798)\n2. NATAMA/CAPTURE - NBN Incident (dev379111)\n3. MyServices - Request Item (dev388985)\n4. AskUs - HR Request (dev347798)\n5. ITAM Request - Internal incident (dev347798)\nReply with the number of the instance you want to use.",
+      "createdAt": "2026-05-27T14:23:23.037Z"
+    },
+    {
+      "id": "m643CuDSeViXTAe2JNqNa",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "2",
+      "createdAt": "2026-05-27T14:23:26.691Z"
+    },
+    {
+      "id": "lq6_DBBAlxoXEYrCTr9g4",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "Selected instance: NATAMA/CAPTURE - NBN Incident. What short description should I use for this incident? Reply with a new short description, or say \"same\" to keep: \"I want to\".",
+      "createdAt": "2026-05-27T14:23:26.697Z"
+    },
+    {
+      "id": "qLWpi655-oD81bt_Uq7Ul",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "nataamma",
+      "createdAt": "2026-05-27T14:23:31.743Z"
+    },
+    {
+      "id": "zqLGMeADwsZQKMBy-AM9p",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "Great — what priority should this incident have? Critical, High, Moderate, or Low?",
+      "createdAt": "2026-05-27T14:23:31.749Z"
+    },
+    {
+      "id": "aoXF0uFrdJtObB6BDKHR-",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "critical",
+      "createdAt": "2026-05-27T14:23:35.192Z"
+    },
+    {
+      "id": "dNNeeR8Y8ZRX7imtTmAsB",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "Got it. I'll open this incident with short description \"nataamma\" and priority Critical. Reply \"yes\" to confirm and create the incident, or \"no\" to cancel.",
+      "createdAt": "2026-05-27T14:23:35.198Z"
+    },
+    {
+      "id": "V_orSUFsmFxgdF7cs3Q4v",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "yes",
+      "createdAt": "2026-05-27T14:23:37.488Z"
+    },
+    {
+      "id": "PY5h_AN3pc4dKB-i3RqPv",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "I could not create the incident. ServiceNow rejected the request: Exception while executing request: Transaction cancelled: maximum execution time exceeded (HTTP 500)",
+      "createdAt": "2026-05-27T14:24:48.287Z"
+    },
+    {
+      "id": "WixsxYVWKKEF2S6NuTwOC",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "yes",
+      "createdAt": "2026-05-27T14:25:03.086Z"
+    },
+    {
+      "id": "HgSfWZ_btaW8dWhh0mm-b",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "I can help with: creating ServiceNow incidents (\"create incident ...\"), answering IT questions (try keywords like vpn, password, outlook, printer, laptop, sla), or searching the knowledge base. What do you need?",
+      "createdAt": "2026-05-27T14:25:03.088Z"
+    },
+    {
+      "id": "EQinxlqP2dDcHA5rYOCog",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "create incident",
+      "createdAt": "2026-05-27T14:25:13.633Z"
+    },
+    {
+      "id": "fALmukOyF_-wI9YJw7L5G",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "I can open this incident in one of these instances:\n1. CRISP - Security Incident (dev347798)\n2. NATAMA/CAPTURE - NBN Incident (dev379111)\n3. MyServices - Request Item (dev388985)\n4. AskUs - HR Request (dev347798)\n5. ITAM Request - Internal incident (dev347798)\nReply with the number of the instance you want to use.",
+      "createdAt": "2026-05-27T14:25:13.641Z"
+    },
+    {
+      "id": "E_O6okQRUXICbHQLGMi7a",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "2",
+      "createdAt": "2026-05-27T14:25:15.984Z"
+    },
+    {
+      "id": "a-7czfFGaTtY6qWDE48YZ",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "Selected instance: NATAMA/CAPTURE - NBN Incident. What short description should I use for this incident?",
+      "createdAt": "2026-05-27T14:25:15.988Z"
+    },
+    {
+      "id": "jC7mlPL6GLVSqIeHYomK1",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "natama incident",
+      "createdAt": "2026-05-27T14:25:21.495Z"
+    },
+    {
+      "id": "XtCzVdQpYG5z7NJr9hRcN",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "Great — what priority should this incident have? Critical, High, Moderate, or Low?",
+      "createdAt": "2026-05-27T14:25:21.501Z"
+    },
+    {
+      "id": "8OCOXy_AFkAa7yPKjL4tq",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "critical",
+      "createdAt": "2026-05-27T14:25:24.019Z"
+    },
+    {
+      "id": "bYxSouSMgMjccn6N38Vvx",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "Got it. I'll open this incident with short description \"natama incident\" and priority Critical. Reply \"yes\" to confirm and create the incident, or \"no\" to cancel.",
+      "createdAt": "2026-05-27T14:25:24.023Z"
+    },
+    {
+      "id": "AwuHR98Lyy9conzPJPJvk",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "create incident test issue",
+      "createdAt": "2026-05-27T14:25:32.379Z"
+    },
+    {
+      "id": "2yEL7XyFKMqqhnGPiV6wA",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "I can open this incident in one of these instances:\n1. CRISP - Security Incident (dev347798)\n2. NATAMA/CAPTURE - NBN Incident (dev379111)\n3. MyServices - Request Item (dev388985)\n4. AskUs - HR Request (dev347798)\n5. ITAM Request - Internal incident (dev347798)\nReply with the number of the instance you want to use.",
+      "createdAt": "2026-05-27T14:25:32.383Z"
+    },
+    {
+      "id": "iCS-EWS8DIuebsdy8FIMJ",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "2",
+      "createdAt": "2026-05-27T14:25:33.494Z"
+    },
+    {
+      "id": "e5uABNEpZRLqGKDqn23Ww",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "Selected instance: NATAMA/CAPTURE - NBN Incident. What short description should I use for this incident? Reply with a new short description, or say \"same\" to keep: \"Test issue\".",
+      "createdAt": "2026-05-27T14:25:33.498Z"
+    },
+    {
+      "id": "393DODoTZV5BhAolPAgSF",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "Test incident from Sameera",
+      "createdAt": "2026-05-27T14:25:34.620Z"
+    },
+    {
+      "id": "E12xJTeA0FhUAug3oV0s2",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "Great — what priority should this incident have? Critical, High, Moderate, or Low?",
+      "createdAt": "2026-05-27T14:25:34.624Z"
+    },
+    {
+      "id": "xovFp1k2rt59WtxUhUY38",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "Moderate",
+      "createdAt": "2026-05-27T14:25:35.743Z"
+    },
+    {
+      "id": "J9mGiYPEKgzHh3ViNww9O",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "Got it. I'll open this incident with short description \"Test incident from Sameera\" and priority Moderate. Reply \"yes\" to confirm and create the incident, or \"no\" to cancel.",
+      "createdAt": "2026-05-27T14:25:35.747Z"
+    },
+    {
+      "id": "p2bxKHp85LMAjfGbL7vEg",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "yes",
+      "createdAt": "2026-05-27T14:25:36.882Z"
+    },
+    {
+      "id": "Oh0N1YyHmboMtlBGDvWY8",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "I could not create the incident. ServiceNow rejected the request: Exception while executing request: Transaction cancelled: maximum execution time exceeded (HTTP 500)",
+      "createdAt": "2026-05-27T14:26:39.591Z"
+    },
+    {
+      "id": "De3aAG-dS8B8HScliEd4D",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "yes",
+      "createdAt": "2026-05-27T14:30:03.763Z"
+    },
+    {
+      "id": "GcNCiv9zVe8sSCHl2srKm",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "I can help with: creating ServiceNow incidents (\"create incident ...\"), answering IT questions (try keywords like vpn, password, outlook, printer, laptop, sla), or searching the knowledge base. What do you need?",
+      "createdAt": "2026-05-27T14:30:03.765Z"
+    },
+    {
+      "id": "MBlGJ7L8rMYukOhhr6HS3",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "incident",
+      "createdAt": "2026-05-27T14:30:08.818Z"
+    },
+    {
+      "id": "nTkO_qo1ehCk82WL_RXlw",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "I can help with: creating ServiceNow incidents (\"create incident ...\"), answering IT questions (try keywords like vpn, password, outlook, printer, laptop, sla), or searching the knowledge base. What do you need?",
+      "createdAt": "2026-05-27T14:30:08.821Z"
+    },
+    {
+      "id": "XmgijMogTXfwFyGsDaSj6",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "create incident",
+      "createdAt": "2026-05-27T14:30:13.244Z"
+    },
+    {
+      "id": "mvH_M8fO4vDBZzx6q6KBF",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "I can open this incident in one of these instances:\n1. CRISP - Security Incident (dev347798)\n2. NATAMA/CAPTURE - NBN Incident (dev379111)\n3. MyServices - Request Item (dev388985)\n4. AskUs - HR Request (dev347798)\n5. ITAM Request - Internal incident (dev347798)\nReply with the number of the instance you want to use.",
+      "createdAt": "2026-05-27T14:30:13.253Z"
+    },
+    {
+      "id": "zpaluYqo-CY5hqAcxNrGW",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "2",
+      "createdAt": "2026-05-27T14:30:15.288Z"
+    },
+    {
+      "id": "D5H5FkldHoI_mV-JvO9M_",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "Selected instance: NATAMA/CAPTURE - NBN Incident. What short description should I use for this incident?",
+      "createdAt": "2026-05-27T14:30:15.292Z"
+    },
+    {
+      "id": "IjJOPpxbT_F3_48yWJIyc",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "natama incident",
+      "createdAt": "2026-05-27T14:30:20.855Z"
+    },
+    {
+      "id": "s9DwsjY5X8NFrWifif5st",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "Great — what priority should this incident have? Critical, High, Moderate, or Low?",
+      "createdAt": "2026-05-27T14:30:20.862Z"
+    },
+    {
+      "id": "Q643hjWEfFErcEIRztdS9",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "high",
+      "createdAt": "2026-05-27T14:30:23.203Z"
+    },
+    {
+      "id": "IklGHMoj3KO2NaBMiucOt",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "Got it. I'll open this incident with short description \"natama incident\" and priority High. Reply \"yes\" to confirm and create the incident, or \"no\" to cancel.",
+      "createdAt": "2026-05-27T14:30:23.208Z"
+    },
+    {
+      "id": "hIm2YEU2WO_46OJu5PoAi",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "yes",
+      "createdAt": "2026-05-27T14:30:30.982Z"
+    },
+    {
+      "id": "m2LB5ta8FSWuEAukEYR7p",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "I could not create the incident. ServiceNow rejected the request: Exception while executing request: Transaction cancelled: maximum execution time exceeded (HTTP 500)",
+      "createdAt": "2026-05-27T14:31:32.923Z"
+    },
+    {
+      "id": "PYcYSwfWtAzOtppY8DF2-",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "3",
+      "createdAt": "2026-05-27T14:32:24.893Z"
+    },
+    {
+      "id": "tkk0jOish1aCCzu3Woj3E",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "I can help with: creating ServiceNow incidents (\"create incident ...\"), answering IT questions (try keywords like vpn, password, outlook, printer, laptop, sla), or searching the knowledge base. What do you need?",
+      "createdAt": "2026-05-27T14:32:24.896Z"
+    },
+    {
+      "id": "HthPUudeCh3_YO2FCMT0F",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "create incident",
+      "createdAt": "2026-05-27T14:32:32.823Z"
+    },
+    {
+      "id": "HXc61uYLzWz1THS-tQjdC",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "I can open this incident in one of these instances:\n1. CRISP - Security Incident (dev347798)\n2. NATAMA/CAPTURE - NBN Incident (dev379111)\n3. MyServices - Request Item (dev388985)\n4. AskUs - HR Request (dev347798)\n5. ITAM Request - Internal incident (dev347798)\nReply with the number of the instance you want to use.",
+      "createdAt": "2026-05-27T14:32:32.831Z"
+    },
+    {
+      "id": "pW63ihh5l45JGd4cSfRYq",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "3",
+      "createdAt": "2026-05-27T14:32:41.007Z"
+    },
+    {
+      "id": "VzlnT02pJcaTSQ1XijUp-",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "Selected instance: MyServices - Request Item. What short description should I use for this incident?",
+      "createdAt": "2026-05-27T14:32:41.013Z"
+    },
+    {
+      "id": "q4ellKrpG5n4JipoZTbV3",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "heto",
+      "createdAt": "2026-05-27T14:32:46.515Z"
+    },
+    {
+      "id": "duqvTc7QJ4a01FzGW5ikJ",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "Great — what priority should this incident have? Critical, High, Moderate, or Low?",
+      "createdAt": "2026-05-27T14:32:46.522Z"
+    },
+    {
+      "id": "3lD2liE2iGnDHjSbz6SM4",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "critical",
+      "createdAt": "2026-05-27T14:33:53.849Z"
+    },
+    {
+      "id": "XtSq4P16JR6zjB3t97sPB",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "Got it. I'll open this incident with short description \"heto\" and priority Critical. Reply \"yes\" to confirm and create the incident, or \"no\" to cancel.",
+      "createdAt": "2026-05-27T14:33:53.862Z"
+    },
+    {
+      "id": "WqAjkhmEY_v2FFYdTG0af",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "user",
+      "text": "yes",
+      "createdAt": "2026-05-27T14:33:55.964Z"
+    },
+    {
+      "id": "yP5Z9dnZ0stXs-XHUYW_E",
+      "userId": "sJRaXSYI4CpPM59B_w2Ja",
+      "role": "bot",
+      "text": "Created INC0010002 in ServiceNow. State: New, priority: Critical. View it at https://dev388985.service-now.com/nav_to.do?uri=incident.do?sys_id=71ee7e2293898f10fb11bd4f7bba10ce",
+      "createdAt": "2026-05-27T14:33:57.624Z"
+    }
+  ],
+  "servicenowInstances": [
+    {
+      "id": "inst-2",
+      "name": "CRISP - Security Incident",
+      "instance": "dev347798",
+      "url": "https://dev347798.service-now.com",
+      "username": "admin"
+    },
+    {
+      "id": "inst-3",
+      "name": "NATAMA/CAPTURE - NBN Incident",
+      "instance": "dev379111",
+      "url": "https://dev379111.service-now.com",
+      "username": "admin"
+    },
+    {
+      "id": "inst-4",
+      "name": "MyServices - Request Item",
+      "instance": "dev388985",
+      "url": "https://dev388985.service-now.com",
+      "username": "admin"
+    },
+    {
+      "id": "inst-5",
+      "name": "AskUs - HR Request",
+      "instance": "dev347798",
+      "url": "https://dev347798.service-now.com",
+      "username": "admin"
+    },
+    {
+      "id": "inst-1",
+      "name": "ITAM Request - Internal incident",
+      "instance": "dev347798",
+      "url": "https://dev347798.service-now.com",
+      "username": "admin"
+    }
+  ],
+  "pendingIncidents": {
+    "guest-user": {
+      "shortDescription": "hi there how are you",
+      "priority": "Critical",
+      "description": "create incident",
+      "createdAt": "2026-05-25T18:07:06.521Z",
+      "instances": [
+        {
+          "id": "inst-2",
+          "name": "CRISP - Security Incident",
+          "instance": "dev352459",
+          "url": "https://dev352459.service-now.com"
+        },
+        {
+          "id": "inst-3",
+          "name": "NATAMA/CAPTURE - NBN Incident",
+          "instance": "dev208811",
+          "url": "https://dev208811.service-now.com"
+        },
+        {
+          "id": "inst-4",
+          "name": "MyServices - Request Item",
+          "instance": "dev305710",
+          "url": "https://dev305710.service-now.com"
+        },
+        {
+          "id": "inst-5",
+          "name": "AskUs - HR Request",
+          "instance": "dev392710",
+          "url": "https://dev392710.service-now.com"
+        },
+        {
+          "id": "inst-1",
+          "name": "ITAM Request - Internal incident",
+          "instance": "dev386084",
+          "url": "https://dev386084.service-now.com"
+        }
+      ],
+      "selectedInstance": "inst-2",
+      "awaitingField": null
+    },
+    "r5YXBOfu02kb5McaYJyWo": {
+      "shortDescription": "Email server down",
+      "priority": "High",
+      "description": "create incident email server down",
+      "createdAt": "2026-05-27T14:22:52.727Z",
+      "instances": [
+        {
+          "id": "inst-2",
+          "name": "CRISP - Security Incident",
+          "instance": "dev347798",
+          "url": "https://dev347798.service-now.com"
+        },
+        {
+          "id": "inst-3",
+          "name": "NATAMA/CAPTURE - NBN Incident",
+          "instance": "dev379111",
+          "url": "https://dev379111.service-now.com"
+        },
+        {
+          "id": "inst-4",
+          "name": "MyServices - Request Item",
+          "instance": "dev388985",
+          "url": "https://dev388985.service-now.com"
+        },
+        {
+          "id": "inst-5",
+          "name": "AskUs - HR Request",
+          "instance": "dev347798",
+          "url": "https://dev347798.service-now.com"
+        },
+        {
+          "id": "inst-1",
+          "name": "ITAM Request - Internal incident",
+          "instance": "dev347798",
+          "url": "https://dev347798.service-now.com"
+        }
+      ]
+    }
+  }
+}
