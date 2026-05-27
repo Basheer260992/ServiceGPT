@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+html, body, #root { height: 100%; }
+
+html { color: rgb(15 23 42); }
+html.dark { color: rgb(226 232 240); }
+
+body { background-color: rgb(248 250 252); }
+html.dark body { background-color: rgb(2 6 23); }
+
+@layer components {
+  .card {
+    @apply bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 rounded-xl shadow-card;
+  }
+  .card-flush {
+    @apply bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 rounded-xl;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-3.5 py-2 rounded-md text-sm font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed select-none;
+  }
+  .btn-primary {
+    @apply btn bg-brand-600 text-white hover:bg-brand-700 active:bg-brand-800 shadow-sm;
+  }
+  .btn-secondary {
+    @apply btn bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 dark:bg-slate-900 dark:text-slate-200 dark:border-slate-800 dark:hover:bg-slate-800;
+  }
+  .btn-ghost {
+    @apply btn text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800;
+  }
+  .btn-danger {
+    @apply btn bg-red-600 text-white hover:bg-red-700;
+  }
+
+  .input {
+    @apply w-full px-3 py-2 text-sm rounded-md border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 focus:outline-none focus:border-brand-500 focus:shadow-focus transition;
+  }
+  .label {
+    @apply block text-xs font-medium text-slate-600 dark:text-slate-400 mb-1.5 uppercase tracking-wider;
+  }
+
+  /* Dot-prefixed enterprise badges */
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md text-2xs font-medium border;
+  }
+  .badge-dot { @apply w-1.5 h-1.5 rounded-full; }
+
+  .skeleton {
+    @apply animate-pulse bg-slate-200/70 dark:bg-slate-800/70 rounded;
+  }
+
+  .table-row {
+    @apply border-b border-slate-100 dark:border-slate-800/60 transition-colors;
+  }
+  .table-row:hover { @apply bg-slate-50/70 dark:bg-slate-800/40; }
+
+  .kbd {
+    @apply inline-flex items-center px-1.5 h-5 text-[10px] font-medium text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded;
+  }
+
+  .section-heading {
+    @apply text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400;
+  }
+
+  .divider {
+    @apply h-px bg-slate-200 dark:bg-slate-800;
+  }
+}
+
+/* Custom scrollbar - subtler */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(100,116,139,0.25); border-radius: 999px; border: 2px solid transparent; background-clip: padding-box; }
+::-webkit-scrollbar-thumb:hover { background: rgba(100,116,139,0.45); border: 2px solid transparent; background-clip: padding-box; }
+
+/* Focus visibility for keyboard nav */
+:focus-visible { outline: none; }
+button:focus-visible, a:focus-visible {
+  box-shadow: 0 0 0 2px rgb(59 115 241 / 0.5);
+  border-radius: 6px;
+}
